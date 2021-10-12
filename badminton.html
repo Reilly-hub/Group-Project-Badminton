@@ -45,19 +45,23 @@
 
         }
          .links{
-            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 16%);
+            background-image: url(bannertop.jpg), url(bannertopmirror.jpg);
+            background-color: #D90909;
+            background-repeat: no-repeat, repeat;
+            column-gap: 5%;
             top: 50px;
-            width: 15%;
+            width: 80%;
+            height: 50px;
             padding: 20px;
-            float: right;
-            clear: both;
-            line-height: 50px;
             font-size: large;
             white-space: nowrap;
             border-radius: 15px;
-            background-color: gold;
             opacity: 0.8;
             outline: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
 
         }
         .imgcenter{
@@ -76,20 +80,43 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .imgbanner{
-            width: 100%;
-            height: 200px;
-            border-radius: 25px;
-            opacity: 0.9;
-            clear: both;
-             
+
+        .link{
+            font-family: serif;
+            font-weight: bold;
+            font-size: large;
+            align-items: center;
+            background: gold;
+            justify-content: center;
+            padding: 1em;
+            text-align: center;
+            opacity: 0.8;
+            border-radius: 50px;
+
         }
         </style>
 
     </head>
     <body>
-        <img src="bannertop.jpg" class="imgbanner" alt="Banner">
         <h1>Badminton</h1>
+        <div class="links">
+            <div class="link">
+                Main Page
+        </div>
+            <div class="link">
+                <a href="rules.html" title="Visit the Rules page">Rules</a>
+            </div>
+            <div class="link">
+                <a href="origins.html" title="Visit the Origins page">Origins</a>
+            </div>
+            <div class="link">
+                <a href="who-plays.html" title="Visit the Who Plays? page">Who Plays?</a>
+            </div>
+            <div class="link">
+                <a href="https://en.wikipedia.org/wiki/Badminton" title="Visit Wikipedia's Badminton page"
+            target="_blank">Badminton On Wiki</a>
+            </div>
+        </div>  
         <div>
             <h2>What is Badminton?</h2>
             <p class="p1"> This is general info about Badminton, I want to have a short paragraph detailing 
@@ -97,16 +124,7 @@
             </p>
         </div>
         <img src="birdie.jpg" class="img1" alt="Badminton">
-            <div class="links">
-                <a href="rules.html" title="Visit the Rules page">Rules</a>
-                <br>
-                <a href="origins.html" title="Visit the Origins page">Origins</a>
-                <br>
-                <a href="who-plays.html" title="Visit the Who Plays? page">Who Plays?</a>
-                <br>
-                <a href="https://en.wikipedia.org/wiki/Badminton" title="Visit Wikipedia's Badminton page"
-                target="_blank">Badminton On Wiki</a>
-            </div>    
+              
         <div>
             <img src="https://via.placeholder.com/350x65" class="imgcenter" alt="Bottom Image">
         </div>
