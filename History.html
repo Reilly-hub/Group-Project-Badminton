@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> The history of Badminton </title>
+        <title> History of Badminton </title>
         <meta charset="UTF-8" />
         <style>
-            body{width: 50%;
+            body{width: 80%;
                 margin: auto;
                 font-family: sans-serif;
-                background-color: lightgray;
+                background-color: rgb(65, 182, 182);
             }
-            h1{
-                clear: both;
-                color: orange;
+            header{
                 text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                padding: 20px;
+                background-color: rgb(154, 243, 243);
             }
-            h1{
+            h2{
                 clear: both;
-                color: orange;
-                text-align: center;
+                text-align: left;
+                font-size: 30px;
             }
-            #content{
+            p{
                 text-align: left;
                 float: left;
-                width: calc(100% - 150px);
             }
-            img{
-                float: right;
-                clear: right;
-                width: 150px;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(123, 248, 248);
             }
-
+            li{
+                float: left;
+            }
+            li a{
+                display: block;
+                text-align: center;
+                padding: 14px 30px;
+                text-decoration: none;
+            }
         </style>
     </head>
     
     <body>
-        <h1>Badminton</h1>
-        <h2>History of Badminton</h2>
-        <p id="content">
-            The exact origin of the game of badminton remains obscure. The early sport related to badminton date back at least 2,000 years to the game of battledore and shuttlecock practiced in China, and Siam. The object of the game is to keep in the air a shuttlecock using a battledore (racket).
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Beechey-dixon.jpg" alt="picture" />
+        <header>Badminton</header>
 
-        <p id="content">
-            In the 1860s, British army officers serving in Poona, India adopted the game of battledore and shuttlecock, and probably brought it back to England. In 1873, the game has been played for the first time in the Duke of Beaufort’s country house, called Badminton House from which the game derives its name. The Badminton Association of England, created in 1893, set the rules of the game which, codified the rules that still govern competitive play.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/BadmintonMorris_edited.jpg" alt="picture" />
-        
-        <p id="content">
-            The International Badminton Federation, now known as the Badminton World Federation (BWF), was formed in 1934. Since the creation, more than 150 countries have joined this federation. The Olympic Committee therefore decided to include this discipline in the Barcelona Olympic Games in 1992.
-        </p>    
-        <img src="https://lh3.googleusercontent.com/proxy/TZwA2LNblB3SGGK1_H1Crkj2KHhp6dbdMw4U2PcaAQBQ87mqVAMECJ_0rvJDTTm_rfs-_poRFhCZbL9nJ4_tLQnB7k4ZDuMTnrQ8hsRQlqS_uwEOMLeKuSgY3CnZw8uBJOhJY3QGvU2Np8YjChn3r0or5n4z" alt="picture" />
+        <ul>
+            <li><a href="badminton.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="WhoWhere/WhoWhere.html">Who Plays</a></li>
+        </ul>
 
-        </body>
+        <main>
+            <h2>History of Badminton</h2>
+                <p>The exact origin of the game of badminton remains obscure. The early sport related to badminton date back at least 2,000 years to the game of battledore and shuttlecock practiced in China, and Siam. The object of the game is to keep in the air a shuttlecock using a battledore (racket).</p>
+                <img src="origine.jpg" alt="picture"/>
+
+                <p>In the 1860s, British army officers serving in Poona, India adopted the game of battledore and shuttlecock, and probably brought it back to England. In 1873, the game has been played for the first time in the Duke of Beaufort’s country house, called Badminton House from which the game derives its name. The Badminton Association of England, created in 1893, set the rules of the game which, codified the rules that still govern competitive play. </p>
+                <img src="Badminton.jpg" alt="picture"/>
+            
+                <p>The International Badminton Federation, now known as the Badminton World Federation (BWF), was formed in 1934. Since the creation, more than 150 countries have joined this federation. The Olympic Committee therefore decided to include this discipline in the Barcelona Olympic Games in 1992. </p> 
+        </main>
+    </body>
 </html>
