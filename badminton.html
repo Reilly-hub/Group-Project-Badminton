@@ -19,96 +19,139 @@
         }
           h2{
             text-align: center;
-            color: green;
+            color: yellow;
             font-family: serif;
-            float: left;
-            width: 50%;
+            width: 20%;
             padding: 10px 10px;
             font-size: 30px;
+            background-color: #D90909;
+            opacity: 0.7;
+            margin-left: 20%;
+            margin-right: 20%;
 
         }
           .p1{
             text-align: justify;
-            color: forestgreen;
+            color: yellow;
             font-family: sans-serif;
-            float: left;
-            width: 70%;
-            padding: 0px 10px 10px
+            width: 60%;
+            padding: 20px 20px 15px;
+            background-color: #D90909;
+            opacity: 0.8;
+            margin: 0px 0px;
+            font-weight: bold;
+            line-height: 1.5em;
+            
 
         }
          .img1{
-            width: 350px;
-            height: 318px;
+            max-width: 20%;
+            height: auto;
             padding: 10px;
             float: right;
             border-radius: 200px;
+            margin-left: 10%;
+            margin-right: 10%;
 
         }
          .links{
-            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 16%);
+            background-image: url(images/bannertop.jpg), url(images/bannertopmirror.jpg);
+            background-color: #D90909;
+            background-repeat: no-repeat, repeat;
+            column-gap: 5%;
             top: 50px;
-            width: 15%;
+            width: 80%;
+            height: 50px;
             padding: 20px;
-            float: right;
-            clear: both;
-            line-height: 50px;
-            font-size: large;
-            white-space: nowrap;
             border-radius: 15px;
-            background-color: gold;
             opacity: 0.8;
             outline: 2px solid black;
-
-        }
-        .imgcenter{
-            display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+
+        }
+        .img2{
+            display: block;
             padding: 10px;
             clear: both;
+            max-width: 40%;
+            height: auto;
+            margin-left: 10%;
+            margin-right: auto;
+            opacity: 0.9;
+            border-radius: 15%;
+            margin-top: 25px;
 
         }
         
         body{
-            background-image: url(background.jpg);
+            background-image: url(images/background.jpg);
             background-color: #D90909;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .imgbanner{
-            width: 100%;
-            height: 200px;
-            border-radius: 25px;
-            opacity: 0.9;
-            clear: both;
-             
+
+        .link{
+            font-family: serif;
+            font-weight: bold;
+            font-size: larger;
+            align-items: center;
+            background: gold;
+            justify-content: center;
+            padding: 1em;
+            text-align: center;
+            opacity: 0.8;
+            border-radius: 50px;
+
         }
         </style>
 
     </head>
     <body>
-        <img src="bannertop.jpg" class="imgbanner" alt="Banner">
         <h1>Badminton</h1>
+        <div class="links">
+            <div class="link">
+                Home
+        </div>
+            <div class="link">
+                <a href="rules.html" title="Visit the Rules page">Rules</a>
+            </div>
+            <div class="link">
+                <a href="History.html" title="Visit the Origins page">History</a>
+            </div>
+            <div class="link">
+                <a href="WhoWhere/WhoWhere.html" title="Visit the Who Plays page">Who Plays</a>
+            </div>
+            <div class="link">
+                <a href="https://en.wikipedia.org/wiki/Badminton" title="Visit Wikipedia's Badminton page"
+            target="_blank">Badminton On Wiki</a>
+            </div>
+        </div>  
         <div>
             <h2>What is Badminton?</h2>
-            <p class="p1"> This is general info about Badminton, I want to have a short paragraph detailing 
-                general information about Badminton. This text is a placeholder for now.
+            <img src="images/birdie.jpg" class="img1" alt="Shuttlecocks">
+            <p class="p1"> 
+                Badminton is a sport played using racquets and a net on a square court quite similarly to tennis, however instead of a ball participants will strike and keep airborne a small, feathered object called a shuttlecock or birdie. Also, unlike tennis, the shuttlecock in play should never touch the ground, or else that rally is over.
+            </p>
+            <p class="p1">
+                Matches are most commonly played one on one known as singles, or two on two called doubles. In competitive play the opposing teams are the same gender, or one man and woman each in the case of mixed doubles matches.
+            </p>
+            <p class="p1">
+                Due to its relatively low weight, players can accelerate the shuttlecock much faster than other racquet sports like tennis or squash, but thanks to its unique design, the shuttlecock will also decelerate much faster as it travels through the air.
+            </p>
+            
+        </div>
+        <div>
+            <h2>Racket or Racquet?</h2>
+            <p class="p1">
+                A "racket" or "racquet" are the words used to describe a sports implement that consists of a handle attached to an open hoop with taught strings across the opening. Although "racket" is the standard spelling of the word, "racquet" is used more commonly in Badminton, as well as squash and racquetball. In every case, the racquet is used to strike the shuttlecock or ball of the sport in question.
             </p>
         </div>
-        <img src="birdie.jpg" class="img1" alt="Badminton">
-            <div class="links">
-                <a href="rules.html" title="Visit the Rules page">Rules</a>
-                <br>
-                <a href="origins.html" title="Visit the Origins page">Origins</a>
-                <br>
-                <a href="who-plays.html" title="Visit the Who Plays? page">Who Plays?</a>
-                <br>
-                <a href="https://en.wikipedia.org/wiki/Badminton" title="Visit Wikipedia's Badminton page"
-                target="_blank">Badminton On Wiki</a>
-            </div>    
+        <span></span>
         <div>
-            <img src="https://via.placeholder.com/350x65" class="imgcenter" alt="Bottom Image">
+            <img src="images/crossedracquets.jpg" class="img2" alt="Badminton racquets">
         </div>
 
     </body>
